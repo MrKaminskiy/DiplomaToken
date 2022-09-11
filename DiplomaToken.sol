@@ -49,6 +49,7 @@ contract DiplomaToken is ERC721, Ownable {
         baseExtension = _newBaseExtension;
     }
 
+    // @dev Gets URL with metadata information
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         _requireMinted(tokenId);
 
